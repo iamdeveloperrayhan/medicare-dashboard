@@ -1,8 +1,24 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
+  --text-p: #0F172A;
+  --text-m: #64748B;
+  --text-pending: #B45309;
+  --text-confirmed: #1D4ED8;
+  --text-completed: #15803D;
+  --text-cancelled: #B91C1C;
+  --body-bg: #F1F5F9;
+  --card: #FFFFFF;
+  --border: #E2E8F0;
+  --btn-p: #0F765E;
+  --soft-p: #CCFBF1;
+  --danger: #DC2626;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -52,13 +68,15 @@
 
 body {
   margin: 0;
+  background-color: var(--body-bg);
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 1200px;
+  /* max-width: 80%; */
   margin: 0 auto;
-  text-align: center;
+  /* padding: 24px 0 24px 0; */
+  /* text-align: center; */
   border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;

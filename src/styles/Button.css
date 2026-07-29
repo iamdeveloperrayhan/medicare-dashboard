@@ -1,0 +1,16 @@
+.btn{
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.red_btn{
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    transition: all 0.5s;
+}
+.red_btn:hover{
+    background-color: var(--danger);
+    color: var(--card);
+}

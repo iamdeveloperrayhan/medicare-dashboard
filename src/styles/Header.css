@@ -1,0 +1,40 @@
+.header_main {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: var(--card);
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.header_left {
+    display: grid;
+    grid-auto-flow: column;
+    width: 120%;
+    align-items: center;
+}
+
+.header_left :first-child {
+    height: 40px;
+    width: 40px;
+    padding-top: 6px;
+    text-align: center;
+    background-color: var(--btn-p);
+    color: var(--card);
+    border-radius: 100%;
+}
+
+.header_left :nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: -10px;
+    margin-right: 15px;
+    color: var(--text-p);
+}
+
+.header_left :last-child {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-m);
+}
