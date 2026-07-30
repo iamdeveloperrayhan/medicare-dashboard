@@ -1,3 +1,4 @@
+import '../../styles/Header.css'
 import Button from '../ui/Button'
 export default function Header() {
     return (

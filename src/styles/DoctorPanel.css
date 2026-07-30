@@ -1,0 +1,19 @@
+@import url(.././index.css);
+.doctor_panel_main{
+    margin-top: 30px;
+    background-color: var(--card);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+}
+.doctor_panel_title{
+    display: flex;
+    justify-content: space-between;
+}
+.doctor_panel_title h2{
+    font-size: 18px;
+    color: var(--text-p);
+    margin-bottom: 16px;
+}
