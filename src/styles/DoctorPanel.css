@@ -1,6 +1,6 @@
 @import url(.././index.css);
 .doctor_panel_main{
-    margin-top: 30px;
+    grid-column: span 5;
     background-color: var(--card);
     padding: 20px;
     width: auto;
@@ -16,4 +16,15 @@
     font-size: 18px;
     color: var(--text-p);
     margin-bottom: 16px;
+}
+.filter_section {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+hr {
+    margin-top: 15px;
+    border: none;
+    height: 1px;
+    background-color: #E2E8F0;
 }

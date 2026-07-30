@@ -1,8 +1,8 @@
 import '../../styles/Badge.css'
-export default function Badge({ content }) {
+export default function Badge({className, content }) {
     return (
         <>
-            <div className="badge_main">
+            <div className={className}>
                 <span>{content}</span>
             </div>
         </>

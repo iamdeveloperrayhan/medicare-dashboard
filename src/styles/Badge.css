@@ -1,8 +1,27 @@
 @import url(.././index.css);
-.badge_main span{
+
+.badge_main span {
     background-color: var(--soft-p);
     color: var(--text-p);
     padding: 2px 6px;
     border-radius: 100%;
     font-size: 17px;
+}
+.filter_badge span {
+    background-color: var(--btn-p);
+    padding: 3px 12px;
+    display: inline-block;
+    color: var(--card);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.filter_badge_unselect span {
+    border: 1px solid #E2E8F0;
+    padding: 3px 12px;
+    display: inline-block;
+    color: var(--card);
+    border-radius: 20px;
+    color: var(--text);
+    font-weight: 300;
+    cursor: pointer;
 }

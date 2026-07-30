@@ -9,6 +9,7 @@
     font-size: 18px;
     color: var(--text-p);
     transition: all 0.5s;
+    margin-bottom: 15px;
 }
 .input_box::placeholder{
     color: var(--text);

@@ -1,0 +1,7 @@
+@import url(.././index.css);
+.lable{
+    font-size: 15px;
+}
+.lable span{
+    color: var(--danger);
+}
