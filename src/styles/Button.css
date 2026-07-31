@@ -15,3 +15,26 @@
     background-color: var(--danger);
     color: var(--card);
 }
+.btn_submit{
+    background-color: var(--btn-p);
+    border: 1px solid var(--btn-p);
+    transition: all 0.5s;
+    margin-right: 15px;
+}
+.btn_submit:hover{
+    color: var(--btn-p);
+    background-color: var(--card);
+}
+.btn_reset{
+    color: var(--btn-p);
+    background-color: var(--card);
+    border: 1px solid var(--btn-p);
+}
+.btn_reset:hover{
+    background-color: var(--btn-p);
+    transition: all 0.5s;
+    color: var(--card);
+}
+.card_btn{
+    margin: 37px 0 0 0;
+}

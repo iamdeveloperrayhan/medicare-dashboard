@@ -1,7 +1,29 @@
 @import url(.././index.css);
-.lable{
+
+.lable {
     font-size: 15px;
 }
-.lable span{
+
+.lable span {
     color: var(--danger);
+}
+
+.date_time_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="file"] {
+    border: 1px dashed #E2E8F0;
+    cursor: pointer;
+    padding: 10px 6px;
+    height: 42px;
+    color: #bbbdc0;
+}
+
+input[type="file"]::file-selector-button {
+    background: transparent;
+    color: var(--text-m);
+    border: none;
+    border-radius: 6px;
 }

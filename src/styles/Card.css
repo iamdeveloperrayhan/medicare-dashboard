@@ -1,18 +1,21 @@
 @import url(.././index.css);
-.card{
-    padding: 40px 20px 20px 20px ;
+
+.card {
+    padding: 40px 20px 20px 20px;
     width: 277px;
     background-color: var(--card);
     height: 180px;
     border-radius: 12px;
     border: 1px solid #E2E8F0;
 }
-.card h1{
+
+.card h1 {
     font-size: 35px;
     position: relative;
     z-index: 1;
 }
-.card h1::before{
+
+.card h1::before {
     content: '';
     position: absolute;
     top: -12px;
@@ -23,13 +26,55 @@
     z-index: -1;
     border-radius: 8px;
 }
-.card p{
+
+.card p {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
     margin-top: 23px;
 }
-.card h2{
+
+.card h2 {
     margin-top: 10px;
     color: var(--text-p);
+}
+
+.doctor_card {
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    border: 1px solid #E2E8F0;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+.doctor_card:first-child span {
+    color: var(--text-completed);
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    background-color: var(--soft-p);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.doctor_detail :first-child {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-p);
+}
+
+.doctor_detail :nth-child(2){
+    font-size: 12px;
+}
+.doctor_detail :last-child{
+    color: var(--text-p);
+}
+.doctor_card:hover{
+    border: 1px solid #15803D;
+}
+.active_card{
+    background-color: #15803D;
 }
