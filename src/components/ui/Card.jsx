@@ -3,7 +3,7 @@ import Button from './Button'
 export default function Card({ image, title, number }) {
     return (
         <>
-            <div className='card_main'>
+            <div className='card_main' style={{marginTop: '30px'}}>
                 <div className='card'>
                     <h1>{image}</h1>
                     <p>{title}</p>

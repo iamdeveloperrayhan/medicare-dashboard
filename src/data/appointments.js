@@ -5,7 +5,7 @@ export const appointments = [
         phone: '01711000000',
         doctorId: 1,
         date: '2026-08-02',
-        time: '10:30',
+        time: '10:30 AM',
         status: 'Pending',
         note: '',
     },
@@ -15,7 +15,7 @@ export const appointments = [
         phone: '01712000000',
         doctorId: 2,
         date: '2026-08-05',
-        time: '14:00',
+        time: '11:00 AM',
         status: 'Confirmed',
         note: '',
     },
@@ -25,7 +25,7 @@ export const appointments = [
         phone: '01713000000',
         doctorId: 3,
         date: '2026-08-03',
-        time: '09:15',
+        time: '09:15 AM',
         status: 'Completed',
         note: '',
     },
@@ -35,9 +35,11 @@ export const appointments = [
         phone: '01714000000',
         doctorId: 1,
         date: '2026-08-01',
-        time: '16:45',
+        time: '11:45 AM',
         status: 'Cancelled',
         note: '',
     },
 
 ];
+
+export default appointments

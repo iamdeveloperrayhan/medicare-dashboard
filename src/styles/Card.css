@@ -71,10 +71,13 @@
 }
 .doctor_detail :last-child{
     color: var(--text-p);
+    font-weight: 600;
+    font-size: 16px;
 }
 .doctor_card:hover{
     border: 1px solid #15803D;
 }
 .active_card{
-    background-color: #15803D;
+    background-color: var(--soft-p);
+    border-radius: 10px;
 }

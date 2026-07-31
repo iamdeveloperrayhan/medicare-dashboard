@@ -16,11 +16,12 @@ export default function CardGrid() {
 }
 
 export function DoctorPanelGrid() {
+    const isMobile = window.innerWidth <= 1230
     return (
         <>
             <div className="main_section" style={{
                 display: 'grid',
-                gridAutoFlow: 'column',
+                gridAutoFlow: isMobile ? "row" : "column",
                 gridTemplateColumns: 'repeat(12, 1fr)',
                 gap: '30px',
                 marginTop: '30px',

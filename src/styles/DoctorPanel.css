@@ -1,27 +1,32 @@
 @import url(.././index.css);
-.doctor_panel_main{
+
+.doctor_panel_main {
     grid-column: span 5;
     background-color: var(--card);
     padding: 20px;
     width: auto;
-    height: auto;
+    height: 880px;
     border-radius: 12px;
     border: 1px solid #E2E8F0;
+
 }
-.doctor_panel_title{
+.doctor_panel_title {
     display: flex;
     justify-content: space-between;
 }
-.doctor_panel_title h2{
+
+.doctor_panel_title h2 {
     font-size: 18px;
     color: var(--text-p);
     margin-bottom: 16px;
 }
+
 .filter_section {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
 }
+
 hr {
     margin-top: 15px;
     border: none;
