@@ -1,7 +1,7 @@
 @import url(.././index.css);
 
 .doctor_panel_main {
-    grid-column: span 5;
+    grid-column: span 9;
     background-color: var(--card);
     padding: 20px;
     width: auto;

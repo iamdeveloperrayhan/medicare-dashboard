@@ -4,6 +4,19 @@ import InputBox from "../ui/Input"
 import Badge from '../ui/Badge'
 import { DoctorCard } from '../ui/Card';
 export default function DoctorPanel() {
+
+    const getProfileInitials = (name) => {
+        if (!name) return ""
+
+        const words = name.trim().split(/\s+/)
+
+        const filteredWords = words.filter((word) => !["dr", "dr.", "mr", "mr.", "mrs", "mrs.", "ms", "ms.", "prof", "prof."].includes(word.toLowerCase()))
+
+        return filteredWords
+            .slice(0, 2)
+            .map((word) => word[0].toUpperCase())
+            .join("")
+    }
     return (
         <>
             <div className="doctor_panel_main">
@@ -24,7 +37,7 @@ export default function DoctorPanel() {
                     {
                         doctors.map((doctor) => (
                             <div key={doctor.id}>
-                                <DoctorCard profilePic='He' doctorName={doctor.name} specialization={`${doctor.department} • ${doctor.specialization}`} visitingFee={doctor.visitingFee} />
+                                <DoctorCard profilePic={getProfileInitials(doctor.name)} doctorName={doctor.name} specialization={`${doctor.department} • ${doctor.specialization}`} visitingFee={doctor.visitingFee} />
                             </div>))
                     }
                 </div>

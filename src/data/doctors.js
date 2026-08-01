@@ -27,7 +27,7 @@ const doctors = [
         id: 4,
         name: 'Dr. Saad Ahmed',
         department: 'Dermatology',
-        specialization: 'FCPS (Dermatology)',
+        specialization: 'MBBS,FCPS (Dermatology)',
         visitingFee: 1300,
         available: true,
     },
