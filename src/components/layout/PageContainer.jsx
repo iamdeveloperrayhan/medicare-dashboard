@@ -7,7 +7,7 @@ export default function PageContainer() {
         <>
             <div className='conteiner_main' style={{
                 maxWidth: '1200px',
-                margin: isMobile ? "30px" : "0 auto 30px auto",
+                margin: isMobile ? "0 30px" : "0 auto 30px auto",
             }}>
                 <CardGrid />
                 <DoctorPanelGrid />

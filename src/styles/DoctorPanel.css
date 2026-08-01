@@ -11,6 +11,12 @@
 
 }
 
+@media screen and (max-width: 1225px) {
+    .doctor_panel_main {
+        grid-column: span 10;
+    }
+}
+
 .doctor_panel_title {
     display: flex;
     justify-content: space-between;

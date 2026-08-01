@@ -3,12 +3,14 @@ import DoctorPanel from "../doctors/DoctorPanel"
 import AppointmentsPage from "../appointments/AppointmentsPage"
 // import AppointmentForm from "../appointments/AppointmentForm"
 export default function CardGrid() {
+    const isMobile = window.innerWidth <= 613
     return (
         <>
             <div style={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'space-between',
+                justifyContent: isMobile ? 'center' : 'space-between',
+
             }}>
                 <StatCard />
             </div>
