@@ -44,8 +44,8 @@ export default function AppointmentRow({appointments, onStatusChange, onDelete})
                             </td>
                             <td>
                                 <div className="doctor_info">
+                                    {/* <p>{appointment.doctorName}</p> */}
                                     <h4>{appointment.doctorId}</h4>
-                                    <p>{appointment.speciality}</p>
                                 </div>
                             </td>
                             <td>
