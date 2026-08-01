@@ -30,4 +30,3 @@ export default function AppointmentsPage() {
         </>
     )
 }
-//  gridTemplateColumns: 'repeat(12, 1fr)',

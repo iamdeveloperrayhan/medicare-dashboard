@@ -43,6 +43,7 @@ export default function AppointmentForm({ onAddAppointment }) {
         return Object.keys(newErrors).length === 0
     }
 
+    // I'm Useing here useRef to store file field data. Here is the functionalety fo useRef.
     const fileInputRef = useRef(null)
 
     const resetForm = () => {
@@ -165,6 +166,7 @@ export default function AppointmentForm({ onAddAppointment }) {
 
                 <span className="lable">Report file (Optional) <span>*</span></span>
 
+                {/* Here i'm using useRef Hook (useRef Used in This File Input Field) */}
                 <InputBox typeName='file' className='input_box' ref={fileInputRef} />
 
                 <Button name='Book Appointment' className='btn_submit' onClick={handleSubmit} />

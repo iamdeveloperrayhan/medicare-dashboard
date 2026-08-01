@@ -1,10 +1,11 @@
 // import { useState } from 'react'
 import '../../styles/AppointmentRow.css'
+import Badge from '../ui/Badge'
 // import appointmentsData from "../../data/appointments"
 
 const STATUS_OPTIONS = ["Pending", "Confirmed", "Completed", "Cancelled"]
 
-export default function AppointmentRow({appointments, onStatusChange, onDelete}) {
+export default function AppointmentRow({ appointments, onStatusChange, onDelete }) {
     // const [appointments, setAppointments] = useState(appointmentsData)
 
     // const handleStatusChange = (id, newStatus) => {
@@ -23,6 +24,19 @@ export default function AppointmentRow({appointments, onStatusChange, onDelete})
 
     return (
         <div className='table_main'>
+            <div className="doctor_panel_title" style={{
+                marginTop: '10px',
+            }}>
+                <h2>Appointments</h2>
+                <Badge className='badge_main' content='12' />
+            </div>
+            <div className='filter_section'>
+                <Badge className='filter_badge' content='All (12)' />
+                <Badge className='filter_badge_unselect' content='Pending (5)' />
+                <Badge className='filter_badge_unselect' content='Confirmed (2)' />
+                <Badge className='filter_badge_unselect' content='Conpleted (4)' />
+                <Badge className='filter_badge_unselect' content='Cancelled (1)' />
+            </div>
             <table>
                 <thead>
                     <tr>
