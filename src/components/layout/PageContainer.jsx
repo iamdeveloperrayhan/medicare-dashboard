@@ -1,5 +1,5 @@
 import CardGrid, { DoctorPanelGrid } from '../stats/StatGrid'
-import AppointmentList from '../appointments/AppointmentList'
+// import AppointmentList from '../appointments/AppointmentList'
 export default function PageContainer() {
     const isMobile = window.innerWidth <= 1270
 
@@ -11,7 +11,7 @@ export default function PageContainer() {
             }}>
                 <CardGrid />
                 <DoctorPanelGrid />
-                <AppointmentList />
+                {/* <AppointmentList /> */}
             </div>
         </>
     )

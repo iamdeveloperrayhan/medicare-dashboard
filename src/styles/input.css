@@ -1,30 +1,31 @@
 @import url(.././index.css);
 
 .input_box {
-    background-color: #fff;
-    width: 100%;
-    border: 1px solid #E2E8F0;
-    padding: 22px 10px 22px 10px;
-    border-radius: 10px;
-    height: 35px;
-    font-size: 18px;
-    color: var(--text-p);
-    transition: all 0.5s;
-    margin-bottom: 15px;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #E2E8F0;
+  padding: 22px 10px 22px 10px;
+  border-radius: 10px;
+  height: 35px;
+  font-size: 18px;
+  color: var(--text-p);
+  transition: all 0.5s;
+  margin-bottom: 15px;
 }
 
 .input_box::placeholder {
-    color: var(--text);
+  color: var(--text);
 }
 
 .input_box:focus {
-    outline: transparent;
-    border: 1px solid #15803D;
+  outline: transparent;
+  border: 1px solid #15803D;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: brightness(0);
 }
+
 input[type="time"]::-webkit-calendar-picker-indicator {
   filter: brightness(0);
 }

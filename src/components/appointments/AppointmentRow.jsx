@@ -1,25 +1,25 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import '../../styles/AppointmentRow.css'
-import appointmentsData from "../../data/appointments"
+// import appointmentsData from "../../data/appointments"
 
 const STATUS_OPTIONS = ["Pending", "Confirmed", "Completed", "Cancelled"]
 
-export default function AppointmentRow() {
-    const [appointments, setAppointments] = useState(appointmentsData)
+export default function AppointmentRow({appointments, onStatusChange, onDelete}) {
+    // const [appointments, setAppointments] = useState(appointmentsData)
 
-    const handleStatusChange = (id, newStatus) => {
-        setAppointments((prev) =>
-            prev.map((appointment) =>
-                appointment.id === id
-                    ? { ...appointment, status: newStatus }
-                    : appointment
-            )
-        )
-    }
+    // const handleStatusChange = (id, newStatus) => {
+    //     setAppointments((prev) =>
+    //         prev.map((appointment) =>
+    //             appointment.id === id
+    //                 ? { ...appointment, status: newStatus }
+    //                 : appointment
+    //         )
+    //     )
+    // }
 
-    const handleDelete = (id) => {
-        setAppointments((prev) => prev.filter((appointment) => appointment.id !== id))
-    }
+    // const handleDelete = (id) => {
+    //     setAppointments((prev) => prev.filter((appointment) => appointment.id !== id))
+    // }
 
     return (
         <div className='table_main'>
@@ -65,7 +65,7 @@ export default function AppointmentRow() {
                                             className="change_btn"
                                             value={appointment.status}
                                             onChange={(e) =>
-                                                handleStatusChange(appointment.id, e.target.value)}>
+                                                onStatusChange(appointment.id, e.target.value)}>
                                             {STATUS_OPTIONS.map((option) => (
                                                 <option key={option} value={option}>
                                                     {option}
@@ -80,7 +80,7 @@ export default function AppointmentRow() {
                                     href="#"
                                     onClick={(e) => {
                                         e.preventDefault()
-                                        handleDelete(appointment.id)
+                                        onDelete(appointment.id)
                                     }}>Delete</a>
                             </td>
                         </tr>

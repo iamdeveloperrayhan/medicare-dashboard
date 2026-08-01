@@ -7,6 +7,7 @@
     border-radius: 100%;
     font-size: 17px;
 }
+
 .filter_badge span {
     background-color: var(--btn-p);
     padding: 3px 12px;
@@ -15,6 +16,7 @@
     border-radius: 20px;
     cursor: pointer;
 }
+
 .filter_badge_unselect span {
     border: 1px solid #E2E8F0;
     padding: 3px 12px;

@@ -22,10 +22,10 @@ export default function DoctorPanel() {
                 <hr />
                 <div>
                     {
-                    doctors.map((doctor)=>(
-                        <div key={doctor.id}>
-                            <DoctorCard profilePic='He' doctorName={doctor.name} specialization={`${doctor.department} • ${doctor.specialization}`} visitingFee={doctor.visitingFee}/>
-                        </div>))
+                        doctors.map((doctor) => (
+                            <div key={doctor.id}>
+                                <DoctorCard profilePic='He' doctorName={doctor.name} specialization={`${doctor.department} • ${doctor.specialization}`} visitingFee={doctor.visitingFee} />
+                            </div>))
                     }
                 </div>
             </div>

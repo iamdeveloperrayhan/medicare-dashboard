@@ -9,8 +9,8 @@ export default function AppointmentsPage() {
     const addAppointment = (newAppointment) => {
         setAppointments((prev) => [...prev, newAppointment])
     }
-    console.log(appointments);
-    
+    // console.log(appointments);
+
     const handleStatusChange = (id, newStatus) => {
         setAppointments((prev) =>
             prev.map((a) => (a.id === id ? { ...a, status: newStatus } : a))
@@ -23,11 +23,11 @@ export default function AppointmentsPage() {
 
     return (
         <>
-            <AppointmentForm onAddAppointment={addAppointment} />
-            <AppointmentRow
-                appointments={appointments}
-                onStatusChange={handleStatusChange}
-                onDelete={handleDelete}/>
+            <div style={{display: 'grid', gridColumn: 'span 10',}}>
+                <AppointmentForm onAddAppointment={addAppointment} />
+                <AppointmentRow appointments={appointments} onStatusChange={handleStatusChange} onDelete={handleDelete} />
+            </div>
         </>
     )
 }
+//  gridTemplateColumns: 'repeat(12, 1fr)',

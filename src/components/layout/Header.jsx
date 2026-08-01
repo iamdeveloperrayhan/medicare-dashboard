@@ -9,7 +9,7 @@ export default function Header() {
                     <div>MediCare Clinic</div>
                     <div>Front Desk Dashboard</div>
                 </div>
-                <Button name='Crash Test' className='red_btn'/>
+                <Button name='Crash Test' className='red_btn' />
             </div>
         </>
     )

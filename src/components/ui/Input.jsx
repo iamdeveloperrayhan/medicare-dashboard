@@ -12,7 +12,7 @@ const InputBox = forwardRef(function InputBox(
             type={typeName}
             placeholder={placeholderName}
             value={value}
-            onChange={onChange}/>
+            onChange={onChange} />
     )
 })
 

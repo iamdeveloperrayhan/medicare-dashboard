@@ -27,6 +27,7 @@ input[type="file"]::file-selector-button {
     border: none;
     border-radius: 6px;
 }
+
 .error_text {
     color: #dc2626;
     font-size: 13px;

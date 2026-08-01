@@ -12,8 +12,8 @@ export default function AppointmentForm({ onAddAppointment }) {
     const [date, setDate] = useState('')
     const [time, setTime] = useState('')
     const [note, setNote] = useState('')
+    
     const [errors, setErrors] = useState({})
-
     const validate = () => {
         const newErrors = {}
 
@@ -83,7 +83,7 @@ export default function AppointmentForm({ onAddAppointment }) {
             status: 'Pending',
         }
 
-        console.log('New appointment submitted:', newAppointment)
+        // console.log('New appointment submitted:', newAppointment)
 
         onAddAppointment(newAppointment)
         resetForm()
@@ -92,7 +92,7 @@ export default function AppointmentForm({ onAddAppointment }) {
 
     return (
         <>
-            <div className="doctor_panel_main" style={{ gridColumn: 'span 7' }}>
+            <div className="doctor_panel_main" style={{ marginBottom: '30px',gridColumn: 'auto',}}>
                 <div className="doctor_panel_title">
                     <h2>Book New Appointment</h2>
                 </div>
@@ -102,8 +102,7 @@ export default function AppointmentForm({ onAddAppointment }) {
                     typeName='text'
                     placeholderName='Enter your name here...'
                     value={patientName}
-                    onChange={(e) => setPatientName(e.target.value)}
-                />
+                    onChange={(e) => setPatientName(e.target.value)} />
                 {errors.phone && <p className="error_text">{errors.patientName}</p>}
 
                 <span className="lable">Phone Number <span>*</span></span>
@@ -111,8 +110,7 @@ export default function AppointmentForm({ onAddAppointment }) {
                     typeName='tel'
                     placeholderName='017XXXXXXXX'
                     value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                />
+                    onChange={(e) => setPhone(e.target.value)} />
                 {errors.phone && <p className="error_text">{errors.phone}</p>}
 
                 <span className="lable">Doctor <span>*</span></span>
@@ -140,8 +138,7 @@ export default function AppointmentForm({ onAddAppointment }) {
                             typeName='date'
                             className='input_box'
                             value={date}
-                            onChange={(e) => setDate(e.target.value)}
-                        />
+                            onChange={(e) => setDate(e.target.value)} />
                         {errors.date && <p className="error_text">{errors.date}</p>}
 
                     </div>
@@ -151,8 +148,7 @@ export default function AppointmentForm({ onAddAppointment }) {
                             typeName='time'
                             className='input_box'
                             value={time}
-                            onChange={(e) => setTime(e.target.value)}
-                        />
+                            onChange={(e) => setTime(e.target.value)} />
                         {errors.time && <p className="error_text">{errors.time}</p>}
                     </div>
                 </div>
@@ -164,8 +160,7 @@ export default function AppointmentForm({ onAddAppointment }) {
                     className='input_box'
                     placeholder='Write a short note...(max 200 chaacters)'
                     value={note}
-                    onChange={(e) => setNote(e.target.value)}
-                ></textarea>
+                    onChange={(e) => setNote(e.target.value)}></textarea>
 
                 <span className="lable">Report file (Optional) <span>*</span></span>
 

@@ -1,5 +1,5 @@
 import '../../styles/Badge.css'
-export default function Badge({className, content }) {
+export default function Badge({ className, content }) {
     return (
         <>
             <div className={className}>

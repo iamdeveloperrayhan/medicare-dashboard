@@ -6,10 +6,12 @@
     gap: 30px;
     margin-top: 30px;
 }
-.appointment_list_main :first-child{
+
+.appointment_list_main :first-child {
     grid-column: span 5;
 }
-.appointment_detail{
+
+.appointment_detail {
     grid-column: span 7;
     background-color: var(--card);
     padding: 20px;

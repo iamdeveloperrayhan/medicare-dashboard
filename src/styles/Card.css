@@ -66,18 +66,21 @@
     color: var(--text-p);
 }
 
-.doctor_detail :nth-child(2){
+.doctor_detail :nth-child(2) {
     font-size: 12px;
 }
-.doctor_detail :last-child{
+
+.doctor_detail :last-child {
     color: var(--text-p);
     font-weight: 600;
     font-size: 16px;
 }
-.doctor_card:hover{
+
+.doctor_card:hover {
     border: 1px solid #15803D;
 }
-.active_card{
+
+.active_card {
     background-color: var(--soft-p);
     border-radius: 10px;
 }

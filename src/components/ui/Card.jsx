@@ -3,7 +3,7 @@ import Button from './Button'
 export default function Card({ image, title, number }) {
     return (
         <>
-            <div className='card_main' style={{marginTop: '30px'}}>
+            <div className='card_main' style={{ marginTop: '30px' }}>
                 <div className='card'>
                     <h1>{image}</h1>
                     <p>{title}</p>
@@ -14,8 +14,8 @@ export default function Card({ image, title, number }) {
     )
 }
 
-export function DoctorCard({profilePic, doctorName, specialization, visitingFee}){
-    return(
+export function DoctorCard({ profilePic, doctorName, specialization, visitingFee }) {
+    return (
         <>
             <div className='doctor_card_main'>
                 <div className='doctor_card'>
@@ -26,7 +26,7 @@ export function DoctorCard({profilePic, doctorName, specialization, visitingFee}
                         <p>Fee ৳ {visitingFee}</p>
                     </div>
                     <div>
-                        <Button name='Select' className='btn_reset card_btn'/>
+                        <Button name='Select' className='btn_reset card_btn' />
                     </div>
                 </div>
             </div>
