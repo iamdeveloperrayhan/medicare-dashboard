@@ -5,6 +5,13 @@ export default function FrontDaskDashboard() {
         <>
             <Header />
             <PageContainer />
+            <div>
+                <p style={{
+                    textAlign: 'center',
+                    marginBottom: '10px',
+                    fontSize: '14px',
+                }}>MdiCare Clinic &copy; 2026 • Built with React</p>
+            </div>
         </>
     )
 }
