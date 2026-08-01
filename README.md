@@ -54,12 +54,6 @@ This project was built as a practical assignment to demonstrate core React funda
 
 ---
 
-## 🔗 Live Demo
-
-> 🌐 **Live Link:** [your_live_link_here](https://your_live_link_here.netlify.app)  
-
----
-
 ## 🖼️ Screenshots
 
 <div align="center">
