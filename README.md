@@ -12,9 +12,9 @@ A single-page **Hospital Appointment Dashboard** built with **React** and **Vite
 
 <br/>
 
-<img src="https://img.shields.io/github/license/your_username/medicare-dashboard?style=flat-square" alt="License" />
-<img src="https://img.shields.io/github/last-commit/your_username/medicare-dashboard?style=flat-square" alt="Last Commit" />
-<img src="https://img.shields.io/github/repo-size/your_username/medicare-dashboard?style=flat-square" alt="Repo Size" />
+<img src="https://img.shields.io/github/license/iamdeveloperrayhan/medicare-dashboard?style=flat-square" alt="License" />
+<img src="https://img.shields.io/github/last-commit/iamdeveloperrayhan/medicare-dashboard?style=flat-square" alt="Last Commit" />
+<img src="https://img.shields.io/github/repo-size/iamdeveloperrayhan/medicare-dashboard?style=flat-square" alt="Repo Size" />
 
 </div>
 
@@ -294,7 +294,7 @@ All three paths — the Error Boundary's `componentDidCatch`, the global `window
 ## 👤 Author
 
 **Name:** Developer Rayhan  
-**Email:** iamdeveloperrayhan@gmail.com 
+**Email:** iamdeveloperrayhan@gmail.com  
 **GitHub:** [@iamdeveloperrayhan](https://github.com/imdeveloperrayhan)  
 **LinkedIn:** [@iamdeveloperrayhan](https://linkedin.com/in/iamdeveloperrayhan)
 
