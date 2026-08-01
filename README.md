@@ -300,7 +300,7 @@ All three paths — the Error Boundary's `componentDidCatch`, the global `window
 ## 👤 Author
 
 **Name:** Developer Rayhan  
-**Email:** iamdeveloperrayhan@gmail.com
+**Email:** iamdeveloperrayhan@gmail.com 
 **GitHub:** [@iamdeveloperrayhan](https://github.com/imdeveloperrayhan)  
 **LinkedIn:** [@iamdeveloperrayhan](https://linkedin.com/in/iamdeveloperrayhan)
 
